@@ -1,11 +1,11 @@
+package pg02.c01;
 
-assert x >= Board.LEFTBOARD && x <= Board.RIGHTBOARDimport java.awt.Image;
+import java.awt.Image;
 import javax.swing.ImageIcon;
 //TODO Transform the code to be used safely in a concurrent context.  
-public class Ball {
+public class Ball{
        //TODO  Find an archive named Ball.png 
-	private String Ball = "Ball.png"; 
-
+	private String Ball = "/images/Whut.png"; 
 	private double x,y,dx,dy;
 	private double v,fi;
 	private Image image;
@@ -16,8 +16,8 @@ public class Ball {
 		image = ii.getImage();
 		
 		//TODO Depend of image size
-		IMG_TAM_X = 32;
-		IMG_TAM_Y = 32;
+		IMG_TAM_X = 200;
+		IMG_TAM_Y = 200;
 
 		
 		x = Billiards.Width/4-16;
