@@ -1,4 +1,5 @@
-import java.awt.Image;
+
+assert x >= Board.LEFTBOARD && x <= Board.RIGHTBOARDimport java.awt.Image;
 import javax.swing.ImageIcon;
 //TODO Transform the code to be used safely in a concurrent context.  
 public class Ball {
@@ -39,6 +40,8 @@ public class Ball {
 		reflect();
 		
 		//TODO Check postcondition
+		assert x >= Board.LEFTBOARD && x <= Board.RIGHTBOARD
+		&& y >= Board.TOPBOARD && y <= Board.BOTTOMBOARD;
 	}
 
 	private void reflect() {
